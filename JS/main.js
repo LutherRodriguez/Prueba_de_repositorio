@@ -25,6 +25,6 @@ let num2 =15
 let resultado = num1+num2
 console.log(resultado)
 
-let precio = parseInt /*transforma en intero el valor spring*/ (prompt("Ingrese valor"))
+let precio = parseInt /*transforma en entero el valor spring*/ (prompt("Ingrese valor"))
 let total = precio*iva
 alert("El precio final con iva es de: $"+total)
