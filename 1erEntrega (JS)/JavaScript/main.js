@@ -111,7 +111,8 @@ const hospedaje = {
 
 const viajeEgresados = [transporte, hospedaje]
 
-alert ("Hay nuevos gastos planificandose: \nVIAJE DE EGRESADOS")
+alert ("Hay nuevos gastos planificandose, agrega cosas a la lista de: \nVIAJE DE EGRESADOS")
+console.log ("\nVIAJE DE EGRESADOS")
 console.table(viajeEgresados)
 
 const nuevosGastos = () => {
@@ -133,7 +134,7 @@ while (nuevaOpcion){
         nuevaOpcion = false
     }
 }
-
+console.log ("\nNuevos gastos del VIAJE DE EGRESADOS")
 console.table(viajeEgresados)
 
 
