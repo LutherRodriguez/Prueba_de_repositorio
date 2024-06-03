@@ -111,18 +111,31 @@ const hospedaje = {
 
 const viajeEgresados = [transporte, hospedaje]
 
+alert ("Hay nuevos gastos planificandose: \nVIAJE DE EGRESADOS")
+console.table(viajeEgresados)
+
 const nuevosGastos = () => {
     let descripcion = prompt("VIAJE DE EGRESADOS: \nConcepto del nuevo gasto")
     let costo = parseInt(prompt("¿cuánto representa en dinero? (expresado en números) "))
-
+    
     const gasto = {
         descripcion: descripcion,
         costo: costo
     }
-
     viajeEgresados.push(gasto)
 }
 
-nuevosGastos()
+let nuevaOpcion = true
+while (nuevaOpcion){
+    nuevosGastos()
+    let nuevaCarga = prompt("¿Desea agregar nuevos gastos al plan? (si/no)")
+    if (nuevaCarga=="no"){
+        nuevaOpcion = false
+    }
+}
 
 console.table(viajeEgresados)
+
+
+
+
